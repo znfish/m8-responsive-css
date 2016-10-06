@@ -8,6 +8,38 @@ see http://stackoverflow.com/questions/6871996/css-two-inline-block-width-50-ele
 
 /* Box sizing */
 
+
+	.wrapper {
+		display: inline-block;
+		font-size: 2rem;
+		border-width: 2px;
+		border-collapse: solid white;
+		background-color: #dad9d9;
+	}
+	#photo {
+		height: 400px;
+		background-color: gray;
+	}
+	p {
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+	}
+	
+@media screen and (min-width: 768px){
+	.wrapper {
+		width: 50%;
+	}
+
+	#photo {
+		background-image: url("https://github.com/znfish/m8-responsive-css/blob/master/exercise-1/imgs/ex-1-large.png");
+	}
+
+	#photo p {
+		display: none;
+	}
+}
+
 * {
     box-sizing: border-box;
 }

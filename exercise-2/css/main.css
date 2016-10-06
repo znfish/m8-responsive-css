@@ -3,4 +3,39 @@
 }
 
 
+.flexbox-container {
+	min-height: 200px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.flex-column {
+	flex-basis: 100%;
+	padding: 20px;
+}
+
+
+.content {
+	background-color: tomato;
+	text-align: center;
+	height: 100%;
+	font-size: 4rem;
+}
+
+
+@media screen and (min-width: 992px) {
+	.flex-column {
+		flex-basis: 25%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.flex-column {
+		flex-basis: 50%;
+	}
+}
+
+
 /* Assign styles here */
